@@ -20,6 +20,10 @@ Install the postgres schema found at:
 
 ```<root>/docker/postgres/docker-entrypoint-initdb.d/01-setUp.sql```
 
+A dockerized postgres with a pg-cron plugin installed can be run with docker-compose yml found in:
+
+```<root>/docker/runDB.yml```
+
 The option of using pg-cron postgres plugin which decommissions stale cluster nodes from the table can be ommited.
 
 
