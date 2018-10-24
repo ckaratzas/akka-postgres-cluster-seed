@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  db:
+    build:
+      context: ./postgres
+    container_name: postgres-backend
+    environment:
+       - POSTGRES_USER=gandoo
+       - POSTGRES_PASSWORD=poustrakos
+       - POSTGRES_DB=akka_cluster_seed
+    ports:
+      - "5432:5432"
