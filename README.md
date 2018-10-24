@@ -45,6 +45,6 @@ akka.cluster {
     }
   }
 ```
-The are also tuning settings (heartbeatInterval, grace priod, e.t.c) found in :
+There are also tuning settings (heartbeatInterval, grace priod, e.t.c) found in :
 
 ```<root>/src/main/java/akka/cluster/seed/settings/Settings.java```
