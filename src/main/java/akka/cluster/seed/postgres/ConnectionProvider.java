@@ -33,6 +33,7 @@ final class ConnectionProvider {
 
     Connection get() throws SQLException {
         try {
+            if (conn != null && conn.isClosed()) reCreateConnection = true;
             if (reCreateConnection) {
                 conn = DriverManager.getConnection(jdbcUrl, userName, password);
             }
